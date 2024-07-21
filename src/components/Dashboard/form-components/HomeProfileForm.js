@@ -50,10 +50,12 @@ const HomeProfileForm = ({ isAuthenticated}) => {
     }
   }
 
+
+
+
   const UpdateBasicInfo = async (e) => {
     e.preventDefault()
     setLoading(true)
-    try {
       const formData = new FormData();
       formData.append("files", resume);
       formData.append("files", profilePhoto);
@@ -101,16 +103,7 @@ const HomeProfileForm = ({ isAuthenticated}) => {
         setLoading(false)
         console.log("UpdateBasicInfo api fails");
       }
-    } catch (err) {
-      console.log(err.message);
-      setAlertMessage(err?.message);
-      setShowAlert(true);
-      setTimeout(() => {
-        setShowAlert(false);
-      }, 4000);
-      setLoading(false)
-
-    }
+  
   }
 
 
