@@ -94,14 +94,13 @@ const HomeProfileForm = ({ isAuthenticated}) => {
           console.log("UpdateBasicInfo api fails", data);
         }
       } catch (err) {
-        console.log(err.message);
+        console.log( "UpdateBasicInfo APi fails : try-catch-error" ,  err.message);
         setAlertMessage(err?.message);
         setShowAlert(true);
         setTimeout(() => {
           setShowAlert(false);
         }, 4000);
         setLoading(false)
-        console.log("UpdateBasicInfo api fails");
       }
   
   }

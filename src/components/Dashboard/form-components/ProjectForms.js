@@ -81,7 +81,7 @@ const ProjectForms = ({ isAuthenticated}) => {
           console.log("UpdateProject api fails");
         }
       } catch (err) {
-        console.log(err.message);
+        console.log( "UpdateProject APi fails : try-catch-error" ,  err.message);
         setAlertMessage(err.message);
         setShowAlert(true);
         setTimeout(() => {
@@ -89,7 +89,6 @@ const ProjectForms = ({ isAuthenticated}) => {
         }, 4000);
         setLoading(false)
         console.log(err.message);
-        console.log("UpdateProject api fails");
       }
   }
 

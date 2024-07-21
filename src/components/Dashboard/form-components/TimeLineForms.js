@@ -82,17 +82,14 @@ const TimeLineForms = ({ isAuthenticated}) => {
           console.log("UpdateTimeline api fails");
         }
       } catch (err) {
-        console.log(err.message);
+        console.log( "UpdateTimeline APi fails : try-catch-error" ,  err.message);
         setAlertMessage(err.message);
         setShowAlert(true);
         setTimeout(() => {
           setShowAlert(false);
         }, 4000);
-        console.log("UpdateTimeline api fails");
         setLoading(false)
       }
-
-  
   }
 
 
