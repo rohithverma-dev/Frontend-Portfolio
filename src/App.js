@@ -35,16 +35,18 @@ function App() {
         },
       });
       const data = await response.json()
-      console.log(data, "Token_User");
+      console.log( "Token_User response " , data );
       if (data.success === true) {
         setIsAuthenticated(true);
+        console.log( "Token_User response for success === true " , data );
       }
       if (data.success === false) {
+        console.log( "Token_User response for success === false " , data );
         localStorage.removeItem("resume-token");
         setIsAuthenticated(false);
       }
     } catch (err) {
-      console.log(err.message);
+      console.log( "Token_User for try-catch-error " , err.message );
     }
   }
 
