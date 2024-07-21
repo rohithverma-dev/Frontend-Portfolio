@@ -46,7 +46,7 @@ const TimeLineForms = ({ isAuthenticated}) => {
 
   const UpdateTimeLine = async (id, file, timelineHeading, timelineDuration, timelineDescription) => {
     setLoading(true)
-    try {
+
       const formData = new FormData();
       formData.append("file", file);
       formData.append("timeline_duration", timelineDuration);
@@ -92,15 +92,7 @@ const TimeLineForms = ({ isAuthenticated}) => {
         setLoading(false)
       }
 
-    } catch (err) {
-      console.log(err.message);
-      setAlertMessage(err.message);
-      setShowAlert(true);
-      setTimeout(() => {
-        setShowAlert(false);
-      }, 4000);
-      setLoading(false)
-    }
+  
   }
 
 

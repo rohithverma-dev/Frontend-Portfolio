@@ -44,7 +44,7 @@ const ProjectForms = ({ isAuthenticated}) => {
   }
 
   const UpdateProject = async (id , file , projectName  , projectDemolink , projectGithublink , projectDescription ) => {
-    try {
+    
       setLoading(true)
       const formData = new FormData();
       formData.append("file", file);
@@ -91,17 +91,6 @@ const ProjectForms = ({ isAuthenticated}) => {
         console.log(err.message);
         console.log("UpdateProject api fails");
       }
-
-    } catch (err) {
-      console.log(err.message);
-      setAlertMessage(err.message);
-      setShowAlert(true);
-      setTimeout(() => {
-        setShowAlert(false);
-      }, 4000);
-      setLoading(false)
-      console.log(err.message);
-    }
   }
 
 
