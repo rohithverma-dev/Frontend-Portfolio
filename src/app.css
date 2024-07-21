@@ -1,0 +1,76 @@
+.loader_div{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    margin: 20px 0;
+    background-color: #a25512eb;
+}
+
+.loader{
+    width: 150px;
+    height: 150px;
+    border: 10px solid burlywood;
+    border-width: 10px 10px 0px 0px;
+    border-radius: 90%;
+    animation: rotateInfinite 0.5s linear infinite;
+}
+
+@media screen and (max-width: 915px) {
+    .loader_div{
+        width: 100%;
+    }
+}
+
+@keyframes rotateInfinite {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.alert_div{
+    width: 380px;
+    height: 80px;
+    border: 5px solid rgba(68, 255, 68, 0.755);
+    background-color: rgb(4, 4, 49);
+    color: white;
+    padding: 10px;
+    color: white;
+    z-index: 1000000;
+    position: fixed;
+    top:4%;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+.alert_div .bar{
+    height: 5px;
+    background-color: blue;
+    animation: alertAnimation 4s linear forwards;
+}
+
+.alert_div:hover .bar {
+    animation-play-state: paused;
+}
+
+.alert_div .message{
+    padding: 15px 0;
+}
+
+@keyframes alertAnimation {
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
