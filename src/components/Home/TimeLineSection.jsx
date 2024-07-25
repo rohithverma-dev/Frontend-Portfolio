@@ -60,7 +60,8 @@ export default TimeLineSection
 const TimeLinecart = ({ timeline , index }) => {
 
     return( <div className={`timeline_container ${index%2 ? "right-container" : "left-container"   }`} >
-        <img src={`${config_env.backend_Url}/public/${timeline.timeline_image}`} alt={index} />
+        {/* <img src={`${config_env.backend_Url}/public/${timeline.timeline_image}`} alt={index} /> */}
+        <img src={`${timeline.timeline_image}`} alt={index} />
         <div className="timeline_text-box">
             <h2>{timeline.timeline_heading}</h2>
             <small>{timeline.timeline_duration}</small>

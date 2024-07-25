@@ -70,7 +70,8 @@ const HomeProfile = () => {
                     responsive, user-friendly, and visually appealing websites.</span></p> */}
                 <p><span>{homeProfile.home_about}</span></p>
                 {/* <a href={`http://localhost:4000/public/${homeProfile.resume}`} target='_blank' className="btn">Download Resume</a> */}
-                <a href={`${config_env.backend_Url}/public/${homeProfile.resume}`} target='_blank' className="btn">Download Resume</a>
+                {/* <a href={`${config_env.backend_Url}/public/${homeProfile.resume}`} target='_blank' className="btn">Download Resume</a> */}
+                <a href={`${homeProfile.resume}`} target='_blank' className="btn">Download Resume</a>
                 <a href="#CONTACT-PAGE" className="btn2">Hire Me Now</a>
                 <div className="social-media">
                     {/* <a href="#" style="--i:7"><i className='bx bxl-'></i></a>
@@ -86,7 +87,7 @@ const HomeProfile = () => {
             <div className="home-img">
                 {/* <img src="/portfolio2.png" alt="" /> */}
                 {/* <img src={`http://localhost:4000/public/${homeProfile.profile_photo}`} alt="" /> */}
-                <img src={`${config_env.backend_Url}/public/${homeProfile.profile_photo}`} alt="" />
+                <img src={`${homeProfile.profile_photo}`} alt="" />
                 <div className="image_shadow"></div>
             </div>
             

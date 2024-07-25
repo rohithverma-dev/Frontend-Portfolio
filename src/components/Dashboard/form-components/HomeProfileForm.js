@@ -102,10 +102,7 @@ const HomeProfileForm = ({ isAuthenticated}) => {
         }, 4000);
         setLoading(false)
       }
-  
   }
-
-
 
 
   useEffect(() => {

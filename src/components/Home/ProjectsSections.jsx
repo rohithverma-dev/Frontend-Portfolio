@@ -103,7 +103,8 @@ const ProjectCart = ({ project, index }) => {
     return (<div className="project">
         <div className="project-card">
             {/* <img src={`http://localhost:4000/public/${project?.project_image}`} alt="" /> */}
-            <img src={`${config_env.backend_Url}/public/${project?.project_image}`} alt="" />
+            {/* <img src={`${config_env.backend_Url}/public/${project?.project_image}`} alt="" /> */}
+            <img src={`${project?.project_image}`} alt="" />
             {/* <h4><a href={project.project_demolink} target='blank' >View Demo Video</a></h4> */}
             <div className="">
                 <a href={project?.project_demolink} target="blank" >View Demo Video</a>
