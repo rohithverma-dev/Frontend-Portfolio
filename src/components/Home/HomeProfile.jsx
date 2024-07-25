@@ -71,7 +71,7 @@ const HomeProfile = () => {
                 <p><span>{homeProfile.home_about}</span></p>
                 {/* <a href={`http://localhost:4000/public/${homeProfile.resume}`} target='_blank' className="btn">Download Resume</a> */}
                 {/* <a href={`${config_env.backend_Url}/public/${homeProfile.resume}`} target='_blank' className="btn">Download Resume</a> */}
-                <a href={`${homeProfile.resume}`} target='blank' className="btn" download="RohitVerma_FullStack_1yr.pdf" >Download Resume</a>
+                <a href={`${homeProfile.resume}`} target='blank' className="btn" >Download Resume</a>
                 <a href="#CONTACT-PAGE" className="btn2">Hire Me Now</a>
                 <div className="social-media">
                     {/* <a href="#" style="--i:7"><i className='bx bxl-'></i></a>
