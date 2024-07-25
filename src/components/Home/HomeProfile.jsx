@@ -81,7 +81,7 @@ const HomeProfile = () => {
 
                     <a href="https://github.com/rohithverma-dev" target='_blank' style={{ '--i': '7' }}><i className='bx bxl-github'></i></a>
                     <a href="https://x.com/verma_rohi1h" target='_blank' style={{ '--i': '8' }}><i className='bx bxl-twitter'></i></a>
-                    <a href="https://www.linkedin.com/in/rohitvermalinkendin/" target='_blank' style={{ '--i': '9' }}><i className='bx bxl-linkedin'></i></a>
+                    <a href="https://www.linkedin.com/in/rohit-fullstack-dev/" target='_blank' style={{ '--i': '9' }}><i className='bx bxl-linkedin'></i></a>
                 </div>
             </div>
             <div className="home-img">
