@@ -107,7 +107,7 @@ const ProjectCart = ({ project, index }) => {
             <img src={`${project?.project_image}`} alt="" />
             {/* <h4><a href={project.project_demolink} target='blank' >View Demo Video</a></h4> */}
             <div className="">
-                <a href={project?.project_demolink} target="blank" >View Demo Video</a>
+                <a href={project?.project_demolink} target="blank" >Visit Site</a>
                 <a href={project?.project_githublink} target="blank" >Git-Hub</a>
             </div>
         </div>
