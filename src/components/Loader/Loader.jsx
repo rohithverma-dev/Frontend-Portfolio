@@ -8,9 +8,13 @@ const Loader = ({ color = '#660553' }) => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor:'rgb(8, 218, 249 , 0.5)',
-      zIndex: 1000000 ,
+      // backgroundColor:'rgb(8, 218, 249 , 0.5)',
+      zIndex: 100000000 ,
       position:'fixed',
+      top:'0',
+      left:'0',
+      transform:'translateX(0)',
+      backgroundColor:'wheat',
     }}>
       <div style={{ transform: 'scale(4)', width: 'fit-content', height: 'fit-content' }}>
         <div
